@@ -1,8 +1,43 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image:url('../images/job.jpg');
 }
 
 a {
   color: #00B7FF;
+}
+h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 35px;
+}
+.container {
+background-color: rgba(255, 255, 255, 0.5);
+}
+input[type="checkbox"] {
+  display:none;
+}
+input[type="checkbox"] + label span {
+  display:inline-block;
+  width:19px;
+  height:19px;
+  background:url('../images/check_radio_sheet.png') left top no-repeat;
+  margin:-1px 4px 0 0;
+  vertical-align:middle;
+  cursor:pointer;
+  transform: scale(1.2);
+}
+input[type="checkbox"]:checked + label span {
+  background:url('../images/check_radio_sheet.png') -19px top no-repeat;
+}
+input[type="checkbox"] + label{
+  display: flex;
+  align-items: center;
+}
+input[type="checkbox"] + label p {
+  margin-bottom: 0px;
+  font-size: 17px;
+}
+.form-control.fluid {
+  width: 100%;
 }
